@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class specs.RegFinStatementSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class specs.RegFinStatementSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/specs.html">specs</a> &gt; RegFinStatementSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m5.71s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Open First page"></a>
+<h3 class="failures">Open First page</h3>
+<span class="code">
+<pre>Condition failed with Exception:
+
+chevron.click()
+|
+geb.waiting.WaitTimeoutException: condition did not pass in 40 seconds (failed with exception)
+	at geb.waiting.Wait.waitFor(Wait.groovy:124)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:78)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)
+	at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)
+	at geb.Page.propertyMissing(Page.groovy:110)
+	at geb.Browser.propertyMissing(Browser.groovy:261)
+	at geb.spock.GebSpec.propertyMissing(GebSpec.groovy:64)
+	at specs.RegFinStatementSpec.Open First page(RegFinStatementSpec.groovy:23)
+Caused by: Assertion failed: 
+ 
+$(&quot;#filing-history-list &gt; div.v-item-group.theme--light.v-expansion-panels &gt; div:nth-child(3) &gt; button &gt; div.list-item &gt; div.filing-item__actions &gt; button &gt; span &gt; i&quot;)
+|
+[]
+ 
+	at pages.DashboardPage._clinit__closure2$_closure3(DashboardPage.groovy:8)
+	at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:102)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)
+	at geb.waiting.Wait.waitFor(Wait.groovy:113)
+	... 8 more
+
+	at specs.RegFinStatementSpec.Open First page(RegFinStatementSpec.groovy:23)
+Caused by: geb.waiting.WaitTimeoutException: condition did not pass in 40 seconds (failed with exception)
+	at geb.waiting.Wait.waitFor(Wait.groovy:124)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:78)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)
+	at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)
+	at geb.Page.propertyMissing(Page.groovy:110)
+	at geb.Browser.propertyMissing(Browser.groovy:261)
+	at geb.spock.GebSpec.propertyMissing(GebSpec.groovy:64)
+	... 1 more
+Caused by: Assertion failed: 
+
+$(&quot;#filing-history-list &gt; div.v-item-group.theme--light.v-expansion-panels &gt; div:nth-child(3) &gt; button &gt; div.list-item &gt; div.filing-item__actions &gt; button &gt; span &gt; i&quot;)
+|
+[]
+
+	at pages.DashboardPage._clinit__closure2$_closure3(DashboardPage.groovy:8)
+	at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:102)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)
+	at geb.waiting.Wait.waitFor(Wait.groovy:113)
+	... 8 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Open First page</td>
+<td class="failures">1m5.71s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>BaseURL: https://test.bcregistry.ca/cooperatives/auth/signin/idir
+--------------------------
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO com.athaydes.spockframework.report.SpockReportExtension - Got configuration from Spock: com.athaydes.spockframework.report.internal.SpockReportsConfiguration([:])
+[Test worker] INFO com.athaydes.spockframework.report.internal.ConfigLoader - SpockReports config loaded: {com.athaydes.spockframework.report.projectVersion=Unknown, com.athaydes.spockframework.report.aggregatedJsonReportDir=, com.athaydes.spockframework.report.template.TemplateReportCreator.enabled=true, com.athaydes.spockframework.report.internal.HtmlReportCreator.printThrowableStackTrace=false, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile=/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension=md, com.athaydes.spockframework.report.hideEmptyBlocks=false, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile=/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName=summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.enabled=true, com.athaydes.spockframework.report.outputDir=build/reports/spock, com.athaydes.spockframework.report.projectName=&lt;&lt;Change Name&gt;&gt;, com.athaydes.spockframework.report.showCodeBlocks=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.specSummaryNameOption=class_name_and_title, com.athaydes.spockframework.report.internal.HtmlReportCreator.inlineCss=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss=spock-feature-report.css, com.athaydes.spockframework.report.testSourceRoots=src/test/groovy, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss=spock-summary-report.css, com.athaydes.spockframework.report.internal.HtmlReportCreator.excludeToc=false, com.athaydes.spockframework.report.IReportCreator=com.athaydes.spockframework.report.internal.HtmlReportCreator}
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 23201
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1584051198.979][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 12, 2020 3:13:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584051202.927][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.032][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.145][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.251][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.359][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.515][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.621][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.735][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051209.729][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051209.832][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051209.933][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051210.035][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051210.317][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051214.531][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051218.816][SEVERE]: Timed out receiving message from renderer: 0.100
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.1.1</a> at Mar 12, 2020, 3:14:21 PM</p>
+</div>
+</div>
+</body>
+</html>

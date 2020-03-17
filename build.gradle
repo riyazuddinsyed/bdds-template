@@ -56,7 +56,7 @@ drivers.each { driver ->
         * Equals sign separated key value pairs, one per new line: SOME_KEY=some value
         * These local environment variables take precedence over any environment variables set at the system level.
         */
-        def envFile = file('.env')
+         def envFile = file('.env')
         if (envFile.exists()) {
         envFile.readLines().each() {
             def (key, value) = it.tokenize('=')
@@ -64,7 +64,7 @@ drivers.each { driver ->
             systemProperty key, value
             }
         }
-        }
+        } 
     }
 }
 

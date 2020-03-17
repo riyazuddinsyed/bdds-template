@@ -1,8 +1,3 @@
-/*
-	This is the Geb configuration file.
-	
-	See: http://www.gebish.org/manual/current/#configuration
-*/
 
 import org.openqa.selenium.Dimension
 import org.openqa.selenium.chrome.ChromeDriver
@@ -12,18 +7,18 @@ import org.openqa.selenium.firefox.FirefoxOptions
 import org.openqa.selenium.remote.DesiredCapabilities
 
 waiting {
-	timeout = 20
+	timeout = 40
 	retryInterval = 1
 }
 
-atCheckWaiting = [20, 1]
+atCheckWaiting = [40, 1]
 
 environments {
 	
 	// run via “./gradlew chromeTest”
 	// See: https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver
 	chrome {
-		driver = { new ChromeDriver() }
+		driver = { new ChromeDriver() } 
 	}
 
 	// run via “./gradlew chromeHeadlessTest”
@@ -34,6 +29,7 @@ environments {
 			o.addArguments('headless')
 			o.addArguments('disable-gpu') 
 			o.addArguments('no-sandbox')
+			o.addArguments('start-fullscreen')
 			new ChromeDriver(o)
 		}
 	}
@@ -59,15 +55,15 @@ baseNavigatorWaiting = true
 
 // Allows for setting you baseurl in an environment variable.
 // This is particularly handy for development and the pipeline
-def env = System.getenv()
-baseUrl = env['BASEURL']
+ //def env = System.getenv()
+//baseUrl = env['BASEURL']
 //if (!baseUrl) {
-	baseUrl = "<<set your BaseURL>>"
+	baseUrl = "https://test.bcregistry.ca/cooperatives/auth/signin/idir"
 //}
 
 println "BaseURL: ${baseUrl}"
 println "--------------------------"
-
+ 
 cacheDriverPerThread = true
 quitCachedDriverOnShutdown = true
 

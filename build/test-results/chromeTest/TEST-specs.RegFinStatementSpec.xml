@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="specs.RegFinStatementSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-03-12T22:13:14" hostname="DESKTOP-J9EG3SU" time="65.712">
+  <properties/>
+  <testcase name="Open First page" classname="specs.RegFinStatementSpec" time="65.712">
+    <failure message="Condition failed with Exception:&#10;&#10;chevron.click()&#10;|&#10;geb.waiting.WaitTimeoutException: condition did not pass in 40 seconds (failed with exception)&#10;&#9;at geb.waiting.Wait.waitFor(Wait.groovy:124)&#10;&#9;at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:78)&#10;&#9;at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)&#10;&#9;at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)&#10;&#9;at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)&#10;&#9;at geb.Page.propertyMissing(Page.groovy:110)&#10;&#9;at geb.Browser.propertyMissing(Browser.groovy:261)&#10;&#9;at geb.spock.GebSpec.propertyMissing(GebSpec.groovy:64)&#10;&#9;at specs.RegFinStatementSpec.Open First page(RegFinStatementSpec.groovy:23)&#10;Caused by: Assertion failed: &#10; &#10;$(&quot;#filing-history-list &gt; div.v-item-group.theme--light.v-expansion-panels &gt; div:nth-child(3) &gt; button &gt; div.list-item &gt; div.filing-item__actions &gt; button &gt; span &gt; i&quot;)&#10;|&#10;[]&#10; &#10;&#9;at pages.DashboardPage._clinit__closure2$_closure3(DashboardPage.groovy:8)&#10;&#9;at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:102)&#10;&#9;at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)&#10;&#9;at geb.waiting.Wait.waitFor(Wait.groovy:113)&#10;&#9;... 8 more&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError">Condition failed with Exception:
+
+chevron.click()
+|
+geb.waiting.WaitTimeoutException: condition did not pass in 40 seconds (failed with exception)
+	at geb.waiting.Wait.waitFor(Wait.groovy:124)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:78)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)
+	at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)
+	at geb.Page.propertyMissing(Page.groovy:110)
+	at geb.Browser.propertyMissing(Browser.groovy:261)
+	at geb.spock.GebSpec.propertyMissing(GebSpec.groovy:64)
+	at specs.RegFinStatementSpec.Open First page(RegFinStatementSpec.groovy:23)
+Caused by: Assertion failed: 
+ 
+$(&quot;#filing-history-list &gt; div.v-item-group.theme--light.v-expansion-panels &gt; div:nth-child(3) &gt; button &gt; div.list-item &gt; div.filing-item__actions &gt; button &gt; span &gt; i&quot;)
+|
+[]
+ 
+	at pages.DashboardPage._clinit__closure2$_closure3(DashboardPage.groovy:8)
+	at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:102)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)
+	at geb.waiting.Wait.waitFor(Wait.groovy:113)
+	... 8 more
+
+	at specs.RegFinStatementSpec.Open First page(RegFinStatementSpec.groovy:23)
+Caused by: geb.waiting.WaitTimeoutException: condition did not pass in 40 seconds (failed with exception)
+	at geb.waiting.Wait.waitFor(Wait.groovy:124)
+	at geb.content.PageContentTemplate.create(PageContentTemplate.groovy:78)
+	at geb.content.PageContentTemplate.get(PageContentTemplate.groovy:54)
+	at geb.content.DefaultPageContentSupport.getContent(DefaultPageContentSupport.groovy:42)
+	at geb.content.PageContentSupport.propertyMissing(PageContentSupport.groovy:41)
+	at geb.Page.propertyMissing(Page.groovy:110)
+	at geb.Browser.propertyMissing(Browser.groovy:261)
+	at geb.spock.GebSpec.propertyMissing(GebSpec.groovy:64)
+	... 1 more
+Caused by: Assertion failed: 
+
+$(&quot;#filing-history-list &gt; div.v-item-group.theme--light.v-expansion-panels &gt; div:nth-child(3) &gt; button &gt; div.list-item &gt; div.filing-item__actions &gt; button &gt; span &gt; i&quot;)
+|
+[]
+
+	at pages.DashboardPage._clinit__closure2$_closure3(DashboardPage.groovy:8)
+	at geb.content.PageContentTemplate.invokeFactory(PageContentTemplate.groovy:102)
+	at geb.content.PageContentTemplate.create_closure1(PageContentTemplate.groovy:59)
+	at geb.waiting.Wait.waitFor(Wait.groovy:113)
+	... 8 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[BaseURL: https://test.bcregistry.ca/cooperatives/auth/signin/idir
+--------------------------
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.athaydes.spockframework.report.SpockReportExtension - Got configuration from Spock: com.athaydes.spockframework.report.internal.SpockReportsConfiguration([:])
+[Test worker] INFO com.athaydes.spockframework.report.internal.ConfigLoader - SpockReports config loaded: {com.athaydes.spockframework.report.projectVersion=Unknown, com.athaydes.spockframework.report.aggregatedJsonReportDir=, com.athaydes.spockframework.report.template.TemplateReportCreator.enabled=true, com.athaydes.spockframework.report.internal.HtmlReportCreator.printThrowableStackTrace=false, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile=/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension=md, com.athaydes.spockframework.report.hideEmptyBlocks=false, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile=/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName=summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.enabled=true, com.athaydes.spockframework.report.outputDir=build/reports/spock, com.athaydes.spockframework.report.projectName=<<Change Name>>, com.athaydes.spockframework.report.showCodeBlocks=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.specSummaryNameOption=class_name_and_title, com.athaydes.spockframework.report.internal.HtmlReportCreator.inlineCss=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss=spock-feature-report.css, com.athaydes.spockframework.report.testSourceRoots=src/test/groovy, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss=spock-summary-report.css, com.athaydes.spockframework.report.internal.HtmlReportCreator.excludeToc=false, com.athaydes.spockframework.report.IReportCreator=com.athaydes.spockframework.report.internal.HtmlReportCreator}
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 23201
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1584051198.979][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 12, 2020 3:13:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1584051202.927][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.032][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.145][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.251][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.359][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.515][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.621][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051203.735][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051209.729][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051209.832][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051209.933][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051210.035][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051210.317][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051214.531][SEVERE]: Timed out receiving message from renderer: 0.100
+[1584051218.816][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>
